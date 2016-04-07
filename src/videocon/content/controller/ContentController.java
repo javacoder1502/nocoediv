@@ -276,7 +276,12 @@ public class ContentController {
          se.settingKeyword(users_keyword);
          user_result_list = se.getSearchResult();
 		ModelAndView modelAndView = new ModelAndView();
+		
+		modelAndView.addObject("users_keyword",users_keyword);
+		
+		modelAndView.addObject("language_change_url","Search");
 		modelAndView.addObject("user_result_list",user_result_list);
+		
 		modelAndView.setViewName("search");
 		return modelAndView;
 	}

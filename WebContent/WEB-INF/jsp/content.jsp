@@ -22,12 +22,55 @@
 <body>
 	<section class="container">
 		<section class="videocon-port">
-            <jsp:include page="/WEB-INF/headers/header.jsp" />
-               <section style="float: left; width: 100%; background-color: #cacaca;">
+
+
+			<section class="header-videocon">
+
+				<section class="row">
+					<section class="col-md-3 col-xs-3">
+						<section class="logo">
+							<img
+								src="<c:url value="/resources/img_videcon/logo-videocon.png" />" />
+						</section>
+					</section>
+
+					<section class="col-md-6 col-xs-6">
+						<div style="padding: 10px;"></div>
+						<section class="lang-view">
+
+							<ul>
+								<li><a
+									href="<c:url value="/${language_change_url}?selectedValue=${selectListId}&lang=en" />"
+									style="display: inline; color: blue;">English |</a></li>
+								<li><a
+									href="<c:url value="/${language_change_url}?selectedValue=${selectListId}&lang=hi" />"
+									style="display: inline; color: blue;">हिंदी </a></li>
+
+							</ul>
+
+						</section>
+
+					</section>
+
+
+					<section class="col-md-3 col-xs-3">
+						<section class="logo-T">
+							<img src="<c:url value="/resources/img_videcon/Tesync.png" />" />
+						</section>
+					</section>
+				</section>
+			</section>
+
+
+
+
+
+			<jsp:include page="/WEB-INF/headers/header.jsp" />
+			<section style="float: left; width: 100%; background-color: #cacaca;">
 				<section class="videocon-show">
 					<jsp:include page="/WEB-INF/headers/cat_list.jsp" />
 
-                      <section class="port">
+					<section class="port">
 						<section class="row">
 
 							<div id="wait">
@@ -35,10 +78,11 @@
 								<c:forEach items="${contentDesc}" var="contentDesc">
 									<section class="col-md-4 col-xs-4">
 										<section class="left-pre">
-                                          <a href="<c:url value= "downloadSearch?content_name=${contentDesc.content_prv}" />" >
-											<img
+											<a
+												href="<c:url value= "downloadSearch?content_name=${contentDesc.content_prv}" />">
+												<img
 												src="<c:url value="../IdeaWap/CMS/Preview/${contentDesc.content_prv}" />" />
-												</a>
+											</a>
 										</section>
 									</section>
 								</c:forEach>
@@ -55,14 +99,15 @@
 
 
 				<section class="banner">
-				<spring:message code="common_banner" var="common_banner"/>
-					<img src="<c:url value="/resources/img_videcon/${common_banner}" />" />
+					<spring:message code="common_banner" var="common_banner" />
+					<img
+						src="<c:url value="/resources/img_videcon/${common_banner}" />" />
 				</section>
 
 				<section class="back">
 					<form>
-					<spring:message code="Back" var="Back_lang"/>
-					<input type="button" value="${Back_lang}" class="bk"
+						<spring:message code="Back" var="Back_lang" />
+						<input type="button" value="${Back_lang}" class="bk"
 							onclick="history.go(-1);">
 					</form>
 				</section>

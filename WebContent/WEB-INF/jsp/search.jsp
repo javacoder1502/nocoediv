@@ -24,6 +24,43 @@
 		<section class="videocon-port">
 
 
+<section class="header-videocon">
+
+				<section class="row">
+					<section class="col-md-3 col-xs-3">
+						<section class="logo">
+							<img
+								src="<c:url value="/resources/img_videcon/logo-videocon.png" />" />
+						</section>
+					</section>
+
+					<section class="col-md-6 col-xs-6">
+						<div style="padding: 10px;"></div>
+						<section class="lang-view">
+
+							<ul>
+								<li><a
+									href="<c:url value="/${language_change_url}?users_keyword=${users_keyword}&lang=en" />"
+									style="display: inline; color: blue;">English |</a></li>
+								<li><a
+									href="<c:url value="/${language_change_url}?users_keyword=${users_keyword}&lang=hi" />"
+									style="display: inline; color: blue;">हिंदी </a></li>
+
+							</ul>
+
+						</section>
+
+					</section>
+
+
+					<section class="col-md-3 col-xs-3">
+						<section class="logo-T">
+							<img src="<c:url value="/resources/img_videcon/Tesync.png" />" />
+						</section>
+					</section>
+				</section>
+			</section>
+
 
 			<jsp:include page="/WEB-INF/headers/header.jsp" />
 

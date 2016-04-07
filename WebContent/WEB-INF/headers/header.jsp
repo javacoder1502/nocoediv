@@ -6,7 +6,7 @@
 <script src="<c:url value="/resources/js_videcon/validate.js" />"></script>
 
 
-<section class="header-videocon">
+<%-- <section class="header-videocon">
 
 	<section class="row">
 		<section class="col-md-3 col-xs-3">
@@ -41,7 +41,7 @@
 			</section>
 		</section>
 	</section>
-</section>
+</section> --%>
 
 
 <section class="search-engine">
